@@ -25,18 +25,18 @@ function createGalleryFromSimpleLightbox(galleryItems) {
 
 console.log(galleryItems);
 
-imagesContainer.addEventListener("click", (eve) => {
-  eve.preventDefault();
-
-  // якщо не картинка - виходимо
-
-  if (eve.target.nodeName !== "IMG") {
-    return;
-  }
-
   new SimpleLightbox(".gallery a", {
     captions: true,
     captionsData: "alt",
     captionDelay: 250,
   });
-});
+
+// imagesContainer.addEventListener("click", (eve) => {
+//   eve.preventDefault();
+
+//   // якщо не картинка - виходимо
+
+//   if (eve.target.nodeName !== "IMG") {
+//     return;
+//   }
+// });
